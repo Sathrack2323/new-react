@@ -8,14 +8,15 @@ import * as React from 'react';
 
 
 const Dashboard=()=>{
-const val=[{
-  value:'hlo',
-  label:'hlk'
-}]
+const val=[{value:'hlo',label:'hlk'}]
+
+function handlechange(e){
+       setValue(e.target.value);
+}
 
   return(
     <Container  maxWidth="xl"  sx={{}}>
-    <div style={{width:'100%',height:'100vh',width:"45px"}}>
+    <div style={{width:'100%',height:'100vh'}}>
       
       <Paper elevation={0} sx={{display:'flex',height:'30px',
       alignItems:'center',padding:'10px',width:"100%",
@@ -28,11 +29,11 @@ const val=[{
         <Button variant="outlined">home</Button>
         <Button  variant="outlined">  product</Button>
         <Button disableRipple variant="outlined">
-        <select sx={{border:"none"}}>
-          <option value="car">Dell</option>
-          <option value="car">Mac</option>
-          <option value="car">Hp</option>
-          <option value="car">Lenovo</option>
+        <select value={value} sx={{border:"none"}}>
+          <option value="car" onChange={handlechange}>Dell</option>
+          <option value="car" onChange={handlechange} >Mac</option>
+          <option value={"dell.js"} onChange={handlechange}>Hp</option>
+          <option value="car" onChange={handlechange}>Lenovo</option>
         </select>
         </Button>
         <Button variant="outlined">about</Button>
