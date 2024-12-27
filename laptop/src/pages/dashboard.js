@@ -1,24 +1,23 @@
-import { Button, Paper, Typography,Link, Box, Container, Input, Avatar,Grid } from "@mui/material"
+import { Button, Paper, Typography,Link, Box, Container, Input, Avatar,Grid, CardContent } from "@mui/material"
 import {MenuItem} from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import * as React from 'react';
+import { useNavigate } from "react-router-dom";
 
 
-const Dashboard=()=>{
-const val=[{value:'hlo',label:'hlk'}]
+function Dashboard(){
 
-function handlechange(e){
-       setValue(e.target.value);
-}
+const navigate =useNavigate();
+
 
   return(
     <Container  maxWidth="xl"  sx={{}}>
     <div style={{width:'100%',height:'100vh'}}>
       
-      <Paper elevation={0} sx={{display:'flex',height:'30px',
+      {/* <Paper elevation={0} sx={{display:'flex',height:'30px',
       alignItems:'center',padding:'10px',width:"100%",
        justifyContent:'space-between'}}>
         <Typography >
@@ -27,22 +26,14 @@ function handlechange(e){
         <Box>
         <Typography sx={{display:'flex',gap:'20px',width:'100%',alignItems:'center'}}>
         <Button variant="outlined">home</Button>
-        <Button  variant="outlined">  product</Button>
-        <Button disableRipple variant="outlined">
-        <select value={value} sx={{border:"none"}}>
-          <option value="car" onChange={handlechange}>Dell</option>
-          <option value="car" onChange={handlechange} >Mac</option>
-          <option value={"dell.js"} onChange={handlechange}>Hp</option>
-          <option value="car" onChange={handlechange}>Lenovo</option>
-        </select>
-        </Button>
+        <Button  variant="outlined"   onClick={()=>navigate('/dell')}>  product</Button>
         <Button variant="outlined">about</Button>
-        <Button variant="outlined">contuct</Button>
+        <Button variant="outlined">contact</Button>
         <Button variant="outlined"> <Link href="/login"  underline="hover" color="red" >login</Link></Button>
         </Typography>
         </Box>
-        </Paper>
-        <Paper elevation={0}>  
+        </Paper> */}
+        {/* <Paper elevation={0}>  
           <Box sx={{display:"flex", justifyContent:"space-between", alignItems:"center",padding:"5px",height:"40px"}}>
             <Box>
             <MenuIcon/>
@@ -57,19 +48,18 @@ function handlechange(e){
             <Avatar alt="Remy Sharp" src={require('../component/30.jpg')} />
            </Box>
           </Box>
-        </Paper>
+        </Paper> */}
 
-        <Paper sx={{margin:"10px",display:"flex"}} elevation={0}>
-          <Paper sx={{display:"",visibility:"",width:"350px",textAlign:"center"}}>
-            <Button>Dell</Button>
+        <Paper   sx={{margin:"10px",display:"flex"}} elevation={0}>
+          <Paper sx={{display:"",visibility:"",width:"350px",height:"50vh", textAlign:"center"}}>
+            <Button  onClick={()=>navigate('/dell')}>Dell</Button>
             <br/>
-            <Button>Hp</Button>
+            <Button onClick={()=>navigate('/hp')}>Hp</Button>
             <br/>
             <Button>Mac</Button>
             <br/>
             <Button>Lenovo</Button>
             <br/>
-            <h1>ensure....</h1>
             <Button>Addres</Button>
             <br/>
             <Button>Account</Button>
@@ -79,7 +69,7 @@ function handlechange(e){
             <Button>service</Button>
             </Paper>
       
-         <Box sx={{width:"100%",borderRadius:"20px"}}>
+         <Box  sx={{width:"100%",borderRadius:"20px"}}>
           <img src={require('../component/29.jpg')} width="600px" height="450px" sx={{borderRadius:"20px"}} ></img>
           </Box>
           <Box sx={{flexGrow:1}}>
