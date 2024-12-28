@@ -13,6 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Contact from "./pages/contact";
 
 
 
@@ -64,6 +65,7 @@ function App(){
       <Route path="/dell" element={<Dell/>}/>
       <Route path="/deliver" element={<Deliver/>}/>
       <Route path="/Paymentent" element={<Payment/>}/>
+      <Route path="/contact" element={<Contact/>}/>
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/about" element={<About/>}/>
       
