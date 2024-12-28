@@ -31,10 +31,10 @@ function App(){
         </Typography  >
         <Box>
         <Typography sx={{display:'flex',gap:'20px',width:'100%',alignItems:'center'}}>
-        <Button variant="outlined">home</Button>
-        <Button  variant="outlined" >  product</Button>
-        <Button variant="outlined">about</Button>
-        <Button variant="outlined">contact</Button>
+        <Button variant="outlined"> <Link href="/"  underline="hover" color="red" > home</Link></Button>
+        <Button  variant="outlined" ><Link href="/dell"  underline="hover" color="red" >product</Link></Button>
+        <Button variant="outlined"> <Link href="/about"  underline="hover" color="red" >about</Link> </Button>
+        <Button variant="outlined"> <Link href="/contact"  underline="hover" color="red" >contact</Link> </Button>
         <Button variant="outlined"> <Link href="/login"  underline="hover" color="red" >login</Link></Button>
         </Typography>
         </Box>
