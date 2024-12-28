@@ -19,7 +19,7 @@ function about() {
           Advantages
           Laptops are more power efficient than desktop computers, and their portability and battery allow for productivity almost anywhere.
           Disadvantages
-          Laptops are generally more expensive than desktop computers, and they're often slower for resource-intensive tasks like gaming, video editing, or graphic design. They're also more easily stolen, and they can be damaged if they're frequently traveled with.
+          Laptops are generally morpensive than desktop computers, and they're often slower for resource-intensive tasks like gaming, video editing, or graphic design. They're also more easily stolen, and they can be damaged if they're frequently traveled with.
         </p>
       </div>
       <div class>
